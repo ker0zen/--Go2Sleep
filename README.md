@@ -3,11 +3,7 @@ Program the shutdown of the pc and lower the music gradually and slowly to fall 
 
 ## How to install
 ### Install external module
--Launch "dependency.bat"
-
-or
-
--Manually install with pip pycaw, pywin, pysimplegui 
+-Launch "dependency.bat" or manually install with pip pycaw, pywin, pysimplegui 
 ### Launch Go2Sleep
 -Run "launch.bat"
 -Set the time (in minutes)
