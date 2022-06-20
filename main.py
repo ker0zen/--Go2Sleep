@@ -5,10 +5,14 @@ from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 import os
+import win32gui, win32con
 import math
 import PySimpleGUI as sg
 from time import sleep
 
+
+hide = win32gui.GetForegroundWindow()
+win32gui.ShowWindow(hide, win32con.SW_HIDE)
 
 devices = AudioUtilities.GetSpeakers()
 interface = devices.Activate(
@@ -30,6 +34,7 @@ while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == 'Cancel': 
         break
+
     if event == 'Shut':
         time = int (values [0])
         window.close ()
