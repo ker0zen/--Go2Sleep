@@ -3,7 +3,7 @@ Program the shutdown of the pc and lower the music gradually and slowly to fall 
 
 ## How to install
 ### Install external module
--Launch dependendy.bat
+-Launch "dependency.bat"
 
 or
 
